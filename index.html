@@ -173,16 +173,17 @@
 <body>
   <script>
   const password = "cauchen527"; // set your password
-  let attempts = 3;
+  let attempts_limit = 3;
+  let attempt = 0;
   let input = prompt("Enter password to view this page:");
 
-  while (input !== password && attempts > 1) {
-    // attempts--;
-    input = prompt(`Wrong password! You have ${attempts} attempt(s) left:`);
-  }
-
-  if (input !== password) {
-    document.body.innerHTML = "<h1>Access Denied</h1>";
+  while (input !== password) {
+    attempt++;
+    if (attempt >= attempts_limit) {
+      alert("Access Denied");
+    } else{
+      input = prompt(`Wrong password! You have ${attempts_limit-attempt} attempt(s) left:`);
+    }
   }
 </script>
 
@@ -362,4 +363,5 @@ profitability level of different business modules of the industry </li>
   </script>
 </body>
 </html>
+
 
