@@ -1,0 +1,46 @@
+.querystyle270232{ border-right: #878787 1px solid; border-top: #878787 1px solid; padding-left: 18px; font-size: 10pt; background-image: url(/system/resource/images/research/seach_bg.gif); border-left: #878787 1px solid; color: #222222; padding-top: 3px; border-bottom: #878787 1px solid; background-repeat: no-repeat; font-family: 宋体; position: relative; height: 22px ;}
+
+  .banner320 .item{
+    height: 390px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+@media only screen and (max-width: 768px){
+    .banner320 .item{
+        height: 120px;}
+}
+.subMain .aside .subNav > ul > li > .a1{
+          width: 8px;
+              height: 8px;
+              float: left;
+              background: #9b0000;
+              margin: 23px 15px 0 24px;}
+          
+          .subMain .aside .subNav > ul > li .subBox > ul li .a2{
+          width: 4px;
+              height: 4px;
+              float: left;
+              background: #5f4a44;
+              margin: 17px 8px 0 55px;}
+          
+          
+          .subMain .aside .subNav > ul > li .subBox > ul li:hover{
+          
+              background: #fff;}
+
+.timestyle230168{ font-size: 9pt; line-height: 150% ;}
+.leaderfont230168{ font-size: 9pt; color: #222222; line-height: 150%; text-decoration: none ;}
+.titlestyle230168{ font-size: 9pt; line-height: 150%; text-decoration: none ;}
+.clickstyle230168{ font-size: 9pt ;}
+.columnstyle230168{ font-size: 9pt ;}
+A.c230168 {
+font-size: 9pt; line-height: 150%; text-decoration: none 
+;}
+A.c230168:link {
+color:#222222;}
+A.c230168:visited {
+color:;}
+A.c230168:active {
+color: ;}
+A.c230168:hover {
+color: #cc0000;}

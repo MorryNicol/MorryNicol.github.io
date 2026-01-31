@@ -1,0 +1,36 @@
+// 判断浏览器版本过低提示
+;(function (window) {
+    var theUA = window.navigator.userAgent.toLowerCase()
+    if (
+        (theUA.match(/msie\s\d+/) && theUA.match(/msie\s\d+/)[0]) ||
+        (theUA.match(/trident\s?\d+/) && theUA.match(/trident\s?\d+/)[0])
+    ) {
+        var ieVersion =
+            theUA.match(/msie\s\d+/)[0].match(/\d+/)[0] ||
+            theUA.match(/trident\s?\d+/)[0]
+        if (ieVersion < 10) {
+            var str =
+                "本站不再支持您的浏览器，360、sogou等浏览器请切换到<strong>极速模式</strong>，<br>或升级您的浏览器到<strong> 更高的版本</strong>！以获得更好的观看效果。"
+            document.writeln(
+                "<pre class='ie8'>" +
+                    "<p style='margin:0 auto; position:fixed; top:0px; left:0px; background:#555; padding:24% 0px; height:50%; width:100%; text-align:center; font-size:18px; color:#fff; line-height:30px;'>" +
+                    str +
+                    '</p></pre>'
+            )
+            document.execCommand('Stop')
+        }
+    }
+})(window)
+
+// 弹出搜索框
+function searchClick() {
+    $('#search').fadeToggle(600)
+}
+
+// 点击导航外,导航消失
+$(document).ready(function () {
+    $('#nav-fixed').click(function () {
+        $('body').toggleClass('side-right')
+        $('.navbar-collapse').toggleClass('in')
+    })
+})

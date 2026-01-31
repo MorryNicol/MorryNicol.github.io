@@ -1,0 +1,16 @@
+.header {
+    z-index: 999;
+position: relative;
+    background: #9b0000;
+}
+
+
+.header .r2 {
+  
+    padding-bottom: 0px;
+}
+
+.nav_bg {
+     background:none !important;
+ 
+}
