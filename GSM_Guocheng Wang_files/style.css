@@ -2827,7 +2827,7 @@ color: inherit;
 	height:45px;
 }
 .m-tab4 li a {
-    width: 130px;
+    width: 120px;
     height: 45px;
  
     font-size: 1.2rem;
@@ -2835,5 +2835,6 @@ color: inherit;
     line-height: 44px;
  
  }
+
 
 }
